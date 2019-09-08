@@ -55,7 +55,7 @@ func main() {
 	//必须要发之前关闭
 	mm.MultipartBodyWriter.Close()
 
-	request, err := http.NewRequest("post", "http://106.12.76.73:18083/compound", bodyBuf)
+	request, err := http.NewRequest("post", "http://localhost:18083/compound", bodyBuf)
 
 	request.Header.Set("Content-Type", mm.MultipartBodyWriter.FormDataContentType())
 
